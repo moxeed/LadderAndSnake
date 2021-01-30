@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LadderAndSnake", "LadderAnd
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LadderAndSnake.UI", "LadderAndSnake.UI\LadderAndSnake.UI.csproj", "{CDCA37D9-72F5-4A6B-95A4-1B6C24B44B53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asa.LadderAndSnake.Test", "Asa.LadderAndSnake.Test\Asa.LadderAndSnake.Test.csproj", "{FB828882-C6BB-4A26-B089-7FBDC30F2C5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CDCA37D9-72F5-4A6B-95A4-1B6C24B44B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDCA37D9-72F5-4A6B-95A4-1B6C24B44B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDCA37D9-72F5-4A6B-95A4-1B6C24B44B53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB828882-C6BB-4A26-B089-7FBDC30F2C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB828882-C6BB-4A26-B089-7FBDC30F2C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB828882-C6BB-4A26-B089-7FBDC30F2C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB828882-C6BB-4A26-B089-7FBDC30F2C5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

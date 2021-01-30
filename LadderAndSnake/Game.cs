@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using System.Text;
+using LadderAndSnake.BoardData;
+using System.Runtime.CompilerServices;
 
+[assembly: InternalsVisibleTo("Asa.LadderAndSnake.Test")]
 namespace LadderAndSnake
 {
     public class Game
@@ -10,22 +12,15 @@ namespace LadderAndSnake
 
         readonly List<Player> _players;
         Board _board;
-        public Game(int heigth, int width, int ladderCount, int snakeCount)
+
+        public Game(int heigth, int width, int ladderCount, int snakeCount) : this()
         {
             _board = new Board(heigth, width, ladderCount, snakeCount);
         }
 
         public void Join(string name, ColorEnum color)
         {
-            //foreach (var item in _players)
-            //{
-            //    if (item.Name == name) throw new InvalidOperationException("Duplicated player name is not allowed.");
-            //}
-
-            //IComparable<T>
             Player newPlayer = new Player(name, color);
-            //if (_players.Any(x => x.Name.ToLower().Trim() == name.ToLower().Trim() || x.Color == color))
-            //if (_players.Any(x => x.Equals(newPlayer)))
             if (_players.Any(x => x == newPlayer))
             {
                 throw new InvalidOperationException("Duplicated player name is not allowed.");
@@ -51,14 +46,19 @@ namespace LadderAndSnake
             }
             var currentPlayer = GetCurrentPlayer();
             MoveResult moveresult = currentPlayer.MoveOn(_board);
-            moveresult.IsWinner = moveresult.NewPosition == _board.ExitPint;
+            moveresult.IsWinner = moveresult.NewPosition == _board.ExitPoint;
             gameIsFinished = moveresult.IsWinner;
             return moveresult;
         }
 
+        int currentPlayer;
         private Player GetCurrentPlayer()
         {
-            throw new NotImplementedException();
+            var player = _players[currentPlayer];
+            currentPlayer ++;
+            currentPlayer %= _players.Count;
+
+            return player;
         }
         public BoardDataDto GetBoardData() => _board.GetData();
     }

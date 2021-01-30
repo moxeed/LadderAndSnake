@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LadderAndSnake.BoardData;
+using System;
+using System.Runtime.CompilerServices;
 
 namespace LadderAndSnake
 {
@@ -12,19 +14,9 @@ namespace LadderAndSnake
         {
 
             Name = name != null ? name.Trim().ToLower() : throw new ArgumentNullException(nameof(name));
-
-            //if (name != null)
-            //{
-            //    Name = null;
-            //}
-            //else
-            //{
-            //    throw new ArgumentNullException(nameof(name));
-            //}
-
             Color = color;
-            //Position = 1;
         }
+
         public int RollDice()
         {
             var randomGenerator = new Random();
@@ -32,9 +24,9 @@ namespace LadderAndSnake
             var diceValue = (randomNumber % 6) + 1;
             return diceValue;
         }
+
         public override bool Equals(object obj)
         {
-
             if (obj is Player player)
             {
                 var namesAreTheSame = string.Compare(Name, player.Name, true) == 0;
@@ -45,8 +37,7 @@ namespace LadderAndSnake
         }
         public override int GetHashCode()
         {
-            //https://docs.microsoft.com/en-us/visualstudio/ide/reference/generate-equals-gethashcode-methods?view=vs-2019
-            return HashCode.Combine(this.Name, this.Color);
+            return HashCode.Combine(Name, Color);
         }
         public static bool operator ==(Player p1, Player p2) => p1.Equals(p2);
         public static bool operator !=(Player p1, Player p2) => !p1.Equals(p2);

@@ -1,14 +1,27 @@
-﻿using System;
+﻿using LadderAndSnake.UI.Actions;
+using System;
 
 namespace LadderAndSnake.UI
 {
     class Program
     {
-        static void Main(string[] args)
+        static IUIAction action;
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
-            Game g = new Game();
-           // g.Players.Add(new Player("", ColorEnum.Blue));
+            Game game = null;
+            action = new SetBoard();
+
+            while (action != null) 
+                try
+                {
+                    action.Render(game);
+                    game = action.DidRender(game);
+                    action = action.NextAction();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
         }
     }
 }

@@ -67,20 +67,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asa05\\.nuget\\packages\\": {}
+    "C:\\Users\\moxeed\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BackEnd\\LadderAndSnake\\LadderAndSnake.UI\\LadderAndSnake.UI.csproj",
+      "projectUniqueName": "D:\\Asa\\LadderAndSnake\\LadderAndSnake.UI\\LadderAndSnake.UI.csproj",
       "projectName": "LadderAndSnake.UI",
-      "projectPath": "D:\\BackEnd\\LadderAndSnake\\LadderAndSnake.UI\\LadderAndSnake.UI.csproj",
-      "packagesPath": "C:\\Users\\Asa05\\.nuget\\packages\\",
-      "outputPath": "D:\\BackEnd\\LadderAndSnake\\LadderAndSnake.UI\\obj\\",
+      "projectPath": "D:\\Asa\\LadderAndSnake\\LadderAndSnake.UI\\LadderAndSnake.UI.csproj",
+      "packagesPath": "C:\\Users\\moxeed\\.nuget\\packages\\",
+      "outputPath": "D:\\Asa\\LadderAndSnake\\LadderAndSnake.UI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Asa05\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\moxeed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -91,9 +98,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\BackEnd\\LadderAndSnake\\LadderAndSnake\\LadderAndSnake.csproj": {
-              "projectPath": "D:\\BackEnd\\LadderAndSnake\\LadderAndSnake\\LadderAndSnake.csproj"
+            "D:\\Asa\\LadderAndSnake\\LadderAndSnake\\LadderAndSnake.csproj": {
+              "projectPath": "D:\\Asa\\LadderAndSnake\\LadderAndSnake\\LadderAndSnake.csproj"
             }
           }
         }
@@ -106,6 +114,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -121,7 +130,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

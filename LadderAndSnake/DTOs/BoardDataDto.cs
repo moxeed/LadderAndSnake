@@ -1,6 +1,5 @@
-﻿using System;
+﻿using LadderAndSnake.BoardData;
 using System.Collections.Generic;
-using System.Text;
 
 namespace LadderAndSnake
 {

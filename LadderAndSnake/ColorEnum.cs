@@ -9,6 +9,7 @@ namespace LadderAndSnake
         Red,
         Blue,
         Yellow,
-        Green
+        Green,
+        Purple
     }
 }

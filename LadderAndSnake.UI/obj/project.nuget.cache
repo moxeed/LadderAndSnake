@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tuKACz1Phk5/qV5bFhNfxo6creyxmSxlMyDJ9rI3PE9yBR/137c489T9Bxn+VNkC2ZBzA/4RERWvsUfQOdfqdA==",
+  "success": true,
+  "projectFilePath": "D:\\BackEnd\\LadderAndSnake\\LadderAndSnake.UI\\LadderAndSnake.UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asa05\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

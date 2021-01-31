@@ -1,9 +1,0 @@
-D:\Asa\LadderAndSnake\LadderAndSnake\obj\Debug\netstandard2.0\LadderAndSnake.csprojAssemblyReference.cache
-D:\Asa\LadderAndSnake\LadderAndSnake\obj\Debug\netstandard2.0\LadderAndSnake.AssemblyInfoInputs.cache
-D:\Asa\LadderAndSnake\LadderAndSnake\obj\Debug\netstandard2.0\LadderAndSnake.AssemblyInfo.cs
-D:\Asa\LadderAndSnake\LadderAndSnake\obj\Debug\netstandard2.0\LadderAndSnake.csproj.CoreCompileInputs.cache
-D:\Asa\LadderAndSnake\LadderAndSnake\bin\Debug\netstandard2.0\LadderAndSnake.deps.json
-D:\Asa\LadderAndSnake\LadderAndSnake\bin\Debug\netstandard2.0\LadderAndSnake.dll
-D:\Asa\LadderAndSnake\LadderAndSnake\bin\Debug\netstandard2.0\LadderAndSnake.pdb
-D:\Asa\LadderAndSnake\LadderAndSnake\obj\Debug\netstandard2.0\LadderAndSnake.dll
-D:\Asa\LadderAndSnake\LadderAndSnake\obj\Debug\netstandard2.0\LadderAndSnake.pdb

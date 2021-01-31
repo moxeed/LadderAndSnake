@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("Asa.LadderAndSnake.Test")]
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
 namespace LadderAndSnake.BoardData
 {
     class Board
@@ -15,6 +16,8 @@ namespace LadderAndSnake.BoardData
         readonly int _ladderCount;
         readonly int _snakeCount;
         readonly List<ShortCut> _shortCuts;// this data structure is not performant in term of time and space complexity
+
+        public Board(){}
 
         public Board(int heigth, int width, int ladderCount, int snakeCount)
         {
@@ -60,7 +63,7 @@ namespace LadderAndSnake.BoardData
                 }
         }
 
-        internal int CalculateNextPostion(int position, int diceValue)
+        internal virtual int CalculateNextPostion(int position, int diceValue)
         {
             var excpectedPosition = position + diceValue;
 

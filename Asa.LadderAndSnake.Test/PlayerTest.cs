@@ -64,19 +64,18 @@ namespace Asa.LadderAndSnake.Test
         [Test]
         public void Players_Currencly_Moves_On()
         {
-            //todo create fake interface for board for mocking
             var playerName = "player1";
             var playerColor = ColorEnum.Yellow;
             var player = new Player(playerName, playerColor);
             var board = new Mock<Board>();
-            board.Setup(c => c.CalculateNextPostion(It.IsAny<int>(), It.IsAny<int>())).Returns(10);
+            board.Setup(c => c.CalculateNextPostion(It.IsAny<int>(), It.IsAny<int>())).Returns((int position, int dice) => position + dice);
 
             var res = player.MoveOn(board.Object);
 
-            Assert.AreEqual(res.Color, playerColor);
-            Assert.AreEqual(res.Name, playerName);
-            Assert.AreEqual(res.OldPosition, 1);
-            Assert.AreEqual(res.NewPosition, 1 + res.DiceValue);
+            Assert.AreEqual(playerColor, res.Color);
+            Assert.AreEqual(playerName, res.Name);
+            Assert.AreEqual(1, res.OldPosition);
+            Assert.AreEqual(1 + res.DiceValue, res.NewPosition);
         }
     }
 }

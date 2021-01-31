@@ -12,7 +12,7 @@ namespace Asa.LadderAndSnake.Test
         [Test]
         public void Board_Should_Not_Allow_Invalid_Ladder_And_Snake_Count() 
         {
-            var width = 10;
+            var width = 2;
             var height = 5;
             var ladderCount = 20;
             var snakeCount = 20;
